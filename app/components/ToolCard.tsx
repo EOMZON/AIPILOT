@@ -1,3 +1,5 @@
+'use client';
+
 import { Tool, TAG_TYPE_COLORS } from '../types';
 import { LineChart } from 'lucide-react';
 
