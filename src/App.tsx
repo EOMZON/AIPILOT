@@ -3,7 +3,7 @@ import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
 
 function App() {
-  const [selectedCategory, setSelectedCategory] = useState('design');
+  const [selectedCategory, setSelectedCategory] = useState('home');
 
   return (
     <div className="flex min-h-screen bg-gray-50">

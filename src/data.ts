@@ -1,6 +1,12 @@
-import { Tool } from './types';
+import { Tool, TagType } from './types';
 
 export const categories = [
+  {
+    id: 'home',
+    name: '首页',
+    color: 'indigo',
+    icon: 'home',
+  },
   {
     id: 'design',
     name: '设计师工具',
@@ -10,7 +16,7 @@ export const categories = [
   {
     id: 'health',
     name: '健康管理',
-    color: 'green',
+    color: 'emerald',
     icon: 'heart',
   },
   {
@@ -27,9 +33,9 @@ export const tools: Tool[] = [
     name: 'Midjourney',
     description: '专业的AI图像生成工具，适合概念艺术和插画设计',
     tags: [
-      { name: '图像生成', color: 'purple-600' },
-      { name: '概念艺术', color: 'pink-600' },
-      { name: '高质量', color: 'yellow-600' },
+      { name: '图像生成', type: TagType.ART },
+      { name: '概念艺术', type: TagType.ART },
+      { name: '高质量', type: TagType.QUALITY },
     ],
     category: 'design',
     subcategory: '图像生成',
@@ -51,9 +57,9 @@ export const tools: Tool[] = [
     name: 'Ada Health',
     description: 'AI驱动的个人健康助手和症状检查工具',
     tags: [
-      { name: '健康诊断', color: 'green-600' },
-      { name: '个人助手', color: 'teal-600' },
-      { name: 'FDA认证', color: 'emerald-600' },
+      { name: '健康诊断', type: TagType.HEALTH },
+      { name: '个人助手', type: TagType.PRODUCTIVITY },
+      { name: 'FDA认证', type: TagType.CERTIFICATION },
     ],
     category: 'health',
     subcategory: '健康诊断',
@@ -75,9 +81,9 @@ export const tools: Tool[] = [
     name: 'Notion AI',
     description: '智能文档助手，提升写作和组织效率',
     tags: [
-      { name: '文档处理', color: 'blue-600' },
-      { name: '写作助手', color: 'indigo-600' },
-      { name: '团队协作', color: 'sky-600' },
+      { name: '文档处理', type: TagType.PRODUCTIVITY },
+      { name: '写作助手', type: TagType.PRODUCTIVITY },
+      { name: '团队协作', type: TagType.COLLABORATION },
     ],
     category: 'productivity',
     subcategory: '文档处理',
